@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO of Nothing</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="https://x.com/home" target="_blank" class="twitter-link">
+        <div class="twitter-icon">
+            <img src="images/twitter.png" alt="Twitter/X">
+        </div>
+    </a>
+    <div class="container">
+        <header>
+            <h1>CEO of Nothing</h1>
+            <p class="subtitle">Your journey to imaginary startup success</p>
+        </header>
+        
+        <div class="currency-display">
+            <span class="currency-icon">$</span>
+            <span id="currency-amount">0</span>
+        </div>
+        
+        <main>
+            <div class="game-area">
+                <div class="workspace">
+                    <div class="idea-display">
+                        <div class="paper">
+                            <h2>Your Startup Idea</h2>
+                            <div id="current-idea">Click "Generate Idea" to start your journey!</div>
+                            <div id="logo-container" class="hidden">
+                                <div id="logo-display"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="controls">
+                        <button id="generate-idea" class="pixel-button">Generate Idea</button>
+                        <button id="enhance-idea" class="pixel-button" disabled>Enhance Idea</button>
+                        <button id="add-logo" class="pixel-button" disabled>Add Logo</button>
+                        <button id="pitch-idea" class="pixel-button" disabled>Pitch to Investor</button>
+                        <button id="send-to-feed" class="pixel-button" disabled>Send to Feed</button>
+                    </div>
+                    
+                    <div class="stats-display">
+                        <div class="stat-item">
+                            <span class="stat-label">Pitches:</span>
+                            <span id="pitch-count">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Success Rate:</span>
+                            <span id="success-rate">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feed">
+                    <h2>Ideas from Other Founders</h2>
+                    <div id="community-feed"></div>
+                </div>
+            </div>
+        </main>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modal-title">Pitch Result</h2>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>CEO of Nothing - A Satirical Startup Simulator &copy; 2025</p>
+        </footer>
+    </div>
+    
+    <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+    <audio id="success-sound" src="sounds/success.mp3" preload="auto"></audio>
+    <audio id="fail-sound" src="sounds/fail.mp3" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
